@@ -4,7 +4,7 @@ import { VitePWA } from "vite-plugin-pwa";
 
 const manifestForPlugIn = {
   registerType: "prompt",
-  includeAssests: ["favicon.ico", "apple-touc-icon.png", "masked-icon.svg"],
+  includeAssests: ["favicon.ico", "apple-touch-icon.png", "maskable_icon.png"],
   manifest: {
     name: "PWA Notifications",
     short_name: "pwa-notify",
