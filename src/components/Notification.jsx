@@ -1,11 +1,9 @@
 import { useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import { requestPermission, onMessageListener } from "../firebase";
+import { onMessageListener } from "../firebase";
 
 function Notification() {
   useEffect(() => {
-    requestPermission();
-
     const unsubscribe = onMessageListener().then((payload) => {
       toast.custom((t) => (
         <div
